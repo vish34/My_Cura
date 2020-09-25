@@ -26,6 +26,7 @@ public class AppointmentValidation {
 		{
 			System.setProperty("webdriver.chrome.driver", "E:\\chromedriver_win32\\chromedriver.exe");
 			d = new ChromeDriver();
+			d.manage().window().maximize();
 		}
 		else if(browser.equalsIgnoreCase("firefox"))
 		{
@@ -36,7 +37,7 @@ public class AppointmentValidation {
 		d.get(url);
 		d.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		d.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-		d.manage().window().maximize();
+//		d.manage().window().maximize();
 	}
 	
 	

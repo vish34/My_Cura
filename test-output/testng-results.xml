@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="30971" started-at="2020-09-25T08:34:24Z" finished-at="2020-09-25T08:34:55Z">
+  <suite name="Suite" duration-ms="34313" started-at="2020-09-25T08:54:40Z" finished-at="2020-09-25T08:55:14Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="20775" started-at="2020-09-25T08:34:24Z" finished-at="2020-09-25T08:34:45Z">
-      <class name="cura.cura.AppointmentValidation">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:cura.cura.AppointmentValidation@35083305]" name="setUp" is-config="true" duration-ms="14798" started-at="2020-09-25T14:04:24Z" finished-at="2020-09-25T14:04:39Z">
+    <test name="Test1" duration-ms="24867" started-at="2020-09-25T08:54:40Z" finished-at="2020-09-25T08:55:05Z">
+      <class name="cura.cura.LoginValidation">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:cura.cura.LoginValidation@35083305]" name="setUp" is-config="true" duration-ms="16337" started-at="2020-09-25T14:24:40Z" finished-at="2020-09-25T14:24:56Z">
           <params>
             <param index="0">
               <value>
@@ -16,26 +16,26 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://katalon-demo-cura.herokuapp.com/#appointment]]>
+                <![CDATA[https://katalon-demo-cura.herokuapp.com/profile.php#login]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="appointmentValidations()[pri:0, instance:cura.cura.AppointmentValidation@35083305]" name="appointmentValidations" duration-ms="5100" started-at="2020-09-25T14:04:39Z" finished-at="2020-09-25T14:04:44Z">
+        <test-method status="PASS" signature="clickButton()[pri:0, instance:cura.cura.LoginValidation@35083305]" name="clickButton" duration-ms="7312" started-at="2020-09-25T14:24:56Z" finished-at="2020-09-25T14:25:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- appointmentValidations -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:cura.cura.AppointmentValidation@35083305]" name="tearDown" is-config="true" duration-ms="843" started-at="2020-09-25T14:04:44Z" finished-at="2020-09-25T14:04:45Z">
+        </test-method> <!-- clickButton -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:cura.cura.LoginValidation@35083305]" name="tearDown" is-config="true" duration-ms="1202" started-at="2020-09-25T14:25:04Z" finished-at="2020-09-25T14:25:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- cura.cura.AppointmentValidation -->
+      </class> <!-- cura.cura.LoginValidation -->
     </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="30971" started-at="2020-09-25T08:34:24Z" finished-at="2020-09-25T08:34:55Z">
-      <class name="cura.cura.AppointmentValidation">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:cura.cura.AppointmentValidation@14a2f921]" name="setUp" is-config="true" duration-ms="22846" started-at="2020-09-25T14:04:24Z" finished-at="2020-09-25T14:04:47Z">
+    <test name="Test2" duration-ms="34313" started-at="2020-09-25T08:54:40Z" finished-at="2020-09-25T08:55:14Z">
+      <class name="cura.cura.LoginValidation">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:cura.cura.LoginValidation@14a2f921]" name="setUp" is-config="true" duration-ms="22747" started-at="2020-09-25T14:24:40Z" finished-at="2020-09-25T14:25:03Z">
           <params>
             <param index="0">
               <value>
@@ -44,22 +44,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://katalon-demo-cura.herokuapp.com/#appointment]]>
+                <![CDATA[https://katalon-demo-cura.herokuapp.com/profile.php#login]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="appointmentValidations()[pri:0, instance:cura.cura.AppointmentValidation@14a2f921]" name="appointmentValidations" duration-ms="3177" started-at="2020-09-25T14:04:47Z" finished-at="2020-09-25T14:04:50Z">
+        <test-method status="PASS" signature="clickButton()[pri:0, instance:cura.cura.LoginValidation@14a2f921]" name="clickButton" duration-ms="6345" started-at="2020-09-25T14:25:03Z" finished-at="2020-09-25T14:25:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- appointmentValidations -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:cura.cura.AppointmentValidation@14a2f921]" name="tearDown" is-config="true" duration-ms="4932" started-at="2020-09-25T14:04:50Z" finished-at="2020-09-25T14:04:55Z">
+        </test-method> <!-- clickButton -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:cura.cura.LoginValidation@14a2f921]" name="tearDown" is-config="true" duration-ms="5205" started-at="2020-09-25T14:25:09Z" finished-at="2020-09-25T14:25:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- cura.cura.AppointmentValidation -->
+      </class> <!-- cura.cura.LoginValidation -->
     </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>

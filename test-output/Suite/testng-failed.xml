@@ -2,19 +2,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
   <parameter name="browser" value="firefox"/>
-  <parameter name="url" value="https://katalon-demo-cura.herokuapp.com/#appointment"/>
+  <parameter name="url" value="https://katalon-demo-cura.herokuapp.com/profile.php#login"/>
   <test thread-count="5" name="Test1">
     <parameter name="browser" value="chrome"/>
-    <parameter name="url" value="https://katalon-demo-cura.herokuapp.com/#appointment"/>
+    <parameter name="url" value="https://katalon-demo-cura.herokuapp.com/profile.php#login"/>
     <classes>
-      <class name="cura.cura.AppointmentValidation"/>
+      <class name="cura.cura.LoginValidation"/>
     </classes>
   </test> <!-- Test1 -->
   <test thread-count="5" name="Test2">
     <parameter name="browser" value="firefox"/>
-    <parameter name="url" value="https://katalon-demo-cura.herokuapp.com/#appointment"/>
+    <parameter name="url" value="https://katalon-demo-cura.herokuapp.com/profile.php#login"/>
     <classes>
-      <class name="cura.cura.AppointmentValidation"/>
+      <class name="cura.cura.LoginValidation"/>
     </classes>
   </test> <!-- Test2 -->
 </suite> <!-- Failed suite [Suite] -->
