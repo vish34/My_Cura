@@ -6,8 +6,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -15,7 +15,8 @@ public class MainValidation {
 
 WebDriver d;
 	
-	@BeforeClass
+
+	@BeforeMethod
 	@Parameters({"browser","url"})
 	public void setUp(String browser, String url)
 	{
@@ -32,58 +33,68 @@ WebDriver d;
 		
 		d.get(url);
 		d.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		d.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		d.manage().window().maximize();
 	}
 	
-	@Test
-	public void clickButton() throws InterruptedException
+	
+	@Test(priority=1)
+	public void appointButtonValidation()
 	{
 		MainPage mp1 = new MainPage(d);
-		mp1.faceBook();
+		mp1.clickOnAppointmentButton();
 		
-		JavascriptExecutor js1 = (JavascriptExecutor)d;
-		js1.executeScript("window.scrollBy(0,300)");
-		Thread.sleep(5000);
-		
-		MainPage mp2 = new MainPage(d);
-		mp2.twitterLink();
-		
-		JavascriptExecutor js2 = (JavascriptExecutor)d;
-		js2.executeScript("window.scrollBy(0,300)");
-		Thread.sleep(5000);
-		
-		MainPage mp3 = new MainPage(d);
-		mp3.footBall();
-		
-		JavascriptExecutor js3 = (JavascriptExecutor)d;
-		js3.executeScript("window.scrollBy(0,300)");
-		Thread.sleep(5000);
-		
-//		JavascriptExecutor js4 = (JavascriptExecutor)d;
-//		js4.executeScript("window.scrollTo(300,0)");
-//		Thread.sleep(5000);
-		
-		MainPage mp4 = new MainPage(d);
-		mp4.scrollUp();
-		Thread.sleep(5000);
-		
-		MainPage mp5 = new MainPage(d);
-		mp5.barClick();
-		Thread.sleep(5000);
-		
-		MainPage mp6 = new MainPage(d);
-		mp6.barClick();
-		Thread.sleep(5000);
-		
-		MainPage mp7 = new MainPage(d);
-		mp7.appointButton();
-		Thread.sleep(5000);
-
+		d.navigate().back();
+		d.navigate().refresh();
 	}
 	
-	@AfterClass
+	
+	@Test(priority=2)
+	public void barsValidation()
+	{
+		MainPage mp1 = new MainPage(d);
+		mp1.barClick();
+		
+		MainPage mp3 = new MainPage(d);
+		mp3.barClick();
+		
+	}
+	
+	
+	@Test(priority=3)
+	public void linksValidation()
+	{
+		//Facebook link
+				MainPage mp1 = new MainPage(d);
+				mp1.faceBook();
+				
+				JavascriptExecutor js1 = (JavascriptExecutor)d;
+				js1.executeScript("window.scrollBy(0,300)");
+		
+		//Twitter link
+				MainPage mp2 = new MainPage(d);
+				mp2.twitterLink();
+				
+				JavascriptExecutor js2 = (JavascriptExecutor)d;
+				js2.executeScript("window.scrollBy(0,300)");
+				
+		//Football link
+				MainPage mp3 = new MainPage(d);
+				mp3.footBall();
+				
+				JavascriptExecutor js3 = (JavascriptExecutor)d;
+				js3.executeScript("window.scrollBy(0,300)");
+				
+		//Email link
+				MainPage mp4 = new MainPage(d);
+				mp4.clickOnEmail();
+	}
+	
+		
+	@AfterMethod
 	public void tearDown()
 	{
 		d.quit();
 	}
+	
 }

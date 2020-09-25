@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\dhira\git\My_Cura\testng.xml</span>
+                    <span>C:\Users\dhira\git\My_Cura\appointmentPage.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="cura.cura.MainValidation" hash-for-method="clickButton">clickButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,7 +102,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="cura.cura.MainValidation" hash-for-method="clickButton">clickButton</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="cura.cura.AppointmentValidation" hash-for-method="appointmentValidations">appointmentValidations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="cura.cura.AppointmentValidation" hash-for-method="appointmentValidations">appointmentValidations</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -131,57 +122,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">cura.cura.MainValidation</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickButton">
-                  </a> <!-- clickButton -->
-                  <span class="method-name">clickButton</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
-  (Session info: chrome=85.0.4183.121)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-9EN2MA4&apos;, ip: &apos;192.168.43.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\dhira\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64557}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 93182ddc5277ede5995484d4d14fc3ac
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at cura.cura.MainPage.appointButton(MainPage.java:54)
-	at cura.cura.MainValidation.clickButton(MainValidation.java:79)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">cura.cura.MainValidation</span>
+              <span class="class-name">cura.cura.AppointmentValidation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="clickButton">
-                  </a> <!-- clickButton -->
-                  <span class="method-name">clickButton</span>
+                  <a name="appointmentValidations">
+                  </a> <!-- appointmentValidations -->
+                  <span class="method-name">appointmentValidations</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="appointmentValidations">
+                  </a> <!-- appointmentValidations -->
+                  <span class="method-name">appointmentValidations</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -189,7 +147,7 @@ Session ID: 93182ddc5277ede5995484d4d14fc3ac
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\dhira\git\My_Cura\testng.xml</span>
+            <span class="header-content">C:\Users\dhira\git\My_Cura\appointmentPage.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -198,33 +156,18 @@ Session ID: 93182ddc5277ede5995484d4d14fc3ac
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-    &lt;parameter name=&quot;url&quot; value=&quot;https://katalon-demo-cura.herokuapp.com/&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://katalon-demo-cura.herokuapp.com/#appointment&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;cura.cura.MainValidation&quot;/&gt;
+      &lt;class name=&quot;cura.cura.AppointmentValidation&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test2&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
-    &lt;parameter name=&quot;url&quot; value=&quot;https://katalon-demo-cura.herokuapp.com/&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://katalon-demo-cura.herokuapp.com/#appointment&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;cura.cura.MainValidation&quot;/&gt;
+      &lt;class name=&quot;cura.cura.AppointmentValidation&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test2 --&gt;
-  &lt;test name=&quot;Test1(failed)&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-    &lt;parameter name=&quot;url&quot; value=&quot;https://katalon-demo-cura.herokuapp.com/&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;cura.cura.MainValidation&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;clickButton&quot;/&gt;
-          &lt;include name=&quot;tearDown&quot;/&gt;
-          &lt;include name=&quot;tearDown&quot;/&gt;
-          &lt;include name=&quot;setUp&quot;/&gt;
-          &lt;include name=&quot;setUp&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- cura.cura.MainValidation --&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test1(failed) --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -240,9 +183,6 @@ Session ID: 93182ddc5277ede5995484d4d14fc3ac
               </li>
               <li>
                 <span class="test-name">Test2 (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Test1(failed) (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -270,18 +210,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'clickButton')
-data.setCell(0, 2, 'cura.cura.MainValidation')
-data.setCell(0, 3, 51596);
+data.setCell(0, 1, 'appointmentValidations')
+data.setCell(0, 2, 'cura.cura.AppointmentValidation')
+data.setCell(0, 3, 5100);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'clickButton')
-data.setCell(1, 2, 'cura.cura.MainValidation')
-data.setCell(1, 3, 37631);
+data.setCell(1, 1, 'appointmentValidations')
+data.setCell(1, 2, 'cura.cura.AppointmentValidation')
+data.setCell(1, 3, 3177);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -307,32 +247,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">cura.cura.MainValidation</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">cura.cura.AppointmentValidation</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(firefox, https://katalon-demo-cura.herokuapp.com/)</span>
+                <span class="method-name">setUp(firefox, https://katalon-demo-cura.herokuapp.com/#appointment)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(chrome, https://katalon-demo-cura.herokuapp.com/)</span>
+                <span class="method-name">setUp(chrome, https://katalon-demo-cura.herokuapp.com/#appointment)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">clickButton</span>
-                <span class="method-start">29941 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">clickButton</span>
-                <span class="method-start">32955 ms</span>
+                <span class="method-name">appointmentValidations</span>
+                <span class="method-start">14814 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">67579 ms</span>
+                <span class="method-start">19916 ms</span>
               </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">appointmentValidations</span>
+                <span class="method-start">22846 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">84555 ms</span>
+                <span class="method-start">26023 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

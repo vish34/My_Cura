@@ -9,17 +9,18 @@ public class MainPage {
 
 	WebDriver d;
 	
-	@FindBy(xpath="//i[@class=\"fa fa-facebook fa-fw fa-3x\"]") private WebElement facebook;
-	@FindBy(xpath="//i[@class=\"fa fa-twitter fa-fw fa-3x\"]") private WebElement twitter;
-	@FindBy(xpath="//i[@class=\"fa fa-dribbble fa-fw fa-3x\"]") private WebElement football;
 	
-	@FindBy(xpath="//i[@class=\"fa fa-chevron-up fa-fw fa-1x\"]") private WebElement scroll;
-	
-	@FindBy(xpath="//i[@class=\"fa fa-bars\"]") private WebElement bars;
-
 	@FindBy(linkText="Make Appointment") private WebElement appointmentButton;
 	
-	//Remaining link, inside bar home and login
+	@FindBy(xpath="//i[@class=\"fa fa-bars\"]") private WebElement bars;
+	
+	@FindBy(xpath="//i[@class=\"fa fa-facebook fa-fw fa-3x\"]") private WebElement facebook;
+	
+	@FindBy(xpath="//i[@class=\"fa fa-twitter fa-fw fa-3x\"]") private WebElement twitter;
+	
+	@FindBy(xpath="//i[@class=\"fa fa-dribbble fa-fw fa-3x\"]") private WebElement football;
+	
+	@FindBy(linkText="info@katalon.com") private WebElement email;
 	
 	public MainPage(WebDriver d)
 	{
@@ -41,20 +42,19 @@ public class MainPage {
 		football.click();
 	}
 	
-	public void scrollUp()
-	{
-		scroll.click();
-	}
-	
 	public void barClick()
 	{
 		bars.click();
 	}
 	
-	public void appointButton()
+	public void clickOnAppointmentButton()
 	{
 		appointmentButton.click();
 	}
 	
-	
+	public void clickOnEmail()
+	{
+		email.click();
+	}
+
 }

@@ -5,7 +5,7 @@
   <test thread-count="5" name="Test1">  
   	
   	<parameter name="browser" value="chrome"></parameter>
-  	<parameter name="url" value="https://katalon-demo-cura.herokuapp.com/"></parameter>
+  	<parameter name="url" value="https://katalon-demo-cura.herokuapp.com/#appointment"></parameter>
     
     <classes>
       <class name="cura.cura.AppointmentValidation"/>
@@ -17,7 +17,7 @@
   <test thread-count="5" name="Test2"> 
   	 
   	 <parameter name="browser" value="firefox"></parameter>
-  	 <parameter name="url" value="https://katalon-demo-cura.herokuapp.com/"></parameter> 
+  	 <parameter name="url" value="https://katalon-demo-cura.herokuapp.com/#appointment"></parameter> 
     
     <classes>
       <class name="cura.cura.AppointmentValidation"/>
